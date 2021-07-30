@@ -4,7 +4,7 @@
 docker build -f Dockerfile -t pezor .
 
 ### Interactive Mode
-docker run -it PEzor bash
+docker run -it pezor bash
 
 ### Stop and delete all images
 docker stop $(docker ps -aq)
