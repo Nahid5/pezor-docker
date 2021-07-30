@@ -13,3 +13,6 @@ docker rmi $(docker images -q)
 
 ### Usage
 docker run -v /home/kali/Documents:/home/kali/Documents -it pezor /app/PEzor/PEzor.sh
+
+### Premade docker image
+https://hub.docker.com/r/nahid5/pezor
