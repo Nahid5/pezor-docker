@@ -1,2 +1,15 @@
-# pezor-docker
-COntainer for https://github.com/phra/PEzor
+# PEzor Docker
+
+### Build
+docker build -f Dockerfile -t pezor .
+
+### Interactive Mode
+docker run -it PEzor bash
+
+### Stop and delete all images
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+docker rmi $(docker images -q)
+
+### Usage
+docker run -v /home/kali/Documents:/home/kali/Documents -it pezor /app/PEzor/PEzor.sh
