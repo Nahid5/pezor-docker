@@ -19,3 +19,6 @@ docker rmi $(docker images -q)
 
 ### Premade docker image
 https://hub.docker.com/r/nahid5/pezor
+
+### Blogpost on it some usage
+https://whatsyourssn.com/posts/pezor/
