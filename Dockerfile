@@ -7,3 +7,4 @@ RUN git clone https://github.com/tpoechtrager/wclang && cd wclang && cmake -DCMA
 RUN git clone https://github.com/phra/PEzor && cd PEzor && sh install.sh
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/go/bin/:/app/PEzor:/app/PEzor/deps/donut/:/app/PEzor/deps/wclang/_prefix_PEzor_/bin/
 #RUN /app/PEzor/PEzor.sh -h
+ENTRYPOINT ["/app/PEzor/PEzor.sh"]
